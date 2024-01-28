@@ -11,10 +11,10 @@ import Image from "next/image"
 import {Button} from "./ui/button";
 import {useEffect, useState} from "react";
 import {cn} from "@/lib/utils";
+import {NavItems} from "@/module/nav-items";
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false)
-
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20 ? true : false);
@@ -29,7 +29,7 @@ export default function Navbar() {
     return (
         <div className={cn(
             isScrolled ? 'bg-background text-foreground' : 'bg-transparent text-white',
-            'fixed top-0 w-[100vw] py-2 px-8 flex justify-between items-center transition-colors'
+            'z-40 fixed top-0 w-[100vw] py-2 px-8 flex justify-between items-center transition-colors'
         )}>
             <div className={'flex gap-3 transition-colors'}>
                 <Link href={'https://www.facebook.com/BrzytwaBarbershop/'}>
@@ -41,50 +41,26 @@ export default function Navbar() {
             </div>
             <NavigationMenu>
                 <NavigationMenuList className={'flex items-center justify-center gap-3'}>
-                    <NavigationMenuItem>
-                        <Link href={'#About'}>
-                            <p className={'hover:text-black transition-colors'}>O nas</p>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Offer'}>
-                            <p className={'hover:text-black transition-colors'}>Oferta</p>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Team'}>
-                            <p className={'hover:text-black transition-colors'}>Zespół</p>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Hero'}>
-                            <Image src={'/logo.png'} alt={"Logo"} width={65} height={65}/>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Training'}>
-                            <p className={'hover:text-black transition-colors'}>Szkolenia</p>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Gallery'}>
-                            <p className={'hover:text-black transition-colors'}>Galeria</p>
-                        </Link>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link href={'#Contact'}>
-                            <p className={'hover:text-black transition-colors'}>Kontakt</p>
-                        </Link>
-                    </NavigationMenuItem>
+                    {NavItems.map((item, index) => (
+                        <NavigationMenuItem key={index}>
+                            <Link href={item.href}>
+                                    {!item.img ?
+                                        item.name
+                                        : <Image src={item.img} alt={item.name} height={65} width={65}/>}
+                            </Link>
+                        </NavigationMenuItem>
+                    ))}
                 </NavigationMenuList>
             </NavigationMenu>
-            <Link href={'https://barbershopbrzytwa.booksy.com'}>
-                <Button
-                    variant={'outline'}
-                    className={'border-black bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] text-black'}
-                >
-                    <p>UMÓW SIĘ</p>
-                </Button>
+            <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
+                <a target={'_blank'}>
+                    <Button
+                        variant={'outline'}
+                        className={'border-foreground bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] text-foreground absolute right-8 top-6 hover:text-white'}
+                    >
+                        <p>UMÓW SIĘ</p>
+                    </Button>
+                </a>
             </Link>
         </div>
     )

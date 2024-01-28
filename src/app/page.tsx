@@ -1,7 +1,11 @@
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import {Separator} from "@/components/ui/separator";
+import {Services} from "@/module/services";
+import ServiceDialog from "@/components/service-dialog";
+import {Employees} from "@/module/employees";
+import {RatesView} from "@/components/rates-view";
+import EmployeeView from "@/components/employee-view";
 
 export default function Home() {
   return (
@@ -21,7 +25,7 @@ export default function Home() {
               </Link>
           </div>
           <div id={'About'}
-               className="h-[50vh] px-[5vw] py-24 bg-background grid grid-cols-3 grid-rows-1 justify-center items-center">
+               className="h-max px-[5vw] py-24 bg-background grid grid-cols-3 grid-rows-1 justify-center items-center">
               <div className='flex justify-center items-center'>
                   <p className={'text-4xl font-bold m-0'}>O NAS</p>
               </div>
@@ -40,11 +44,11 @@ export default function Home() {
                   </p>
               </div>
           </div>
-          <div id={'Offer'} className={'h-[100vh] py-24 bg-foreground flex flex-col gap-4 items-center text-white'}>
+          <div id={'Offer'} className={'h-max py-24 bg-foreground flex flex-col gap-6 items-center text-white'}>
               <p className={'text-3xl font-bold m-0'}>NASZE USŁUGI</p>
               <span className={'bg-primary h-[1px] w-96'}><br/></span>
-              <div>
-
+              <div className={'w-[75vw] flex flex-wrap gap-4 justify-center items-center'}>
+                  {Services.map(item => <ServiceDialog item={item} key={item.id}/>)}
               </div>
           </div>
           <div
@@ -54,26 +58,30 @@ export default function Home() {
                   <p>CHCESZ ZOSTAĆ BARBEREM LUB BARBERKĄ?</p>
                   <p className={'font-black'}>ZAPISZ SIĘ NA NASZ KURS</p>
               </div>
-              <Link href={'https://barbershopbrzytwa.booksy.com'}>
-                  <Button
-                      variant={'outline'}
-                      className={'border-foreground bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:text-white'}
-                  >
-                      <p>UMÓW SIĘ NA WIZYTĘ</p>
-                  </Button>
+              <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
+                  <a target={'_blank'}>
+                      <Button
+                          variant={'outline'}
+                          className={'border-foreground bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:text-white'}
+                      >
+                          <p>UMÓW SIĘ NA WIZYTĘ</p>
+                      </Button>
+                  </a>
               </Link>
           </div>
-          <div id={'Team'} className={'h-[100vh] py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>
-              <p className={'text-3xl font-bold m-0'}>NASZ ZESPÓŁ</p>
-              <span className={'bg-primary h-[1px] w-96'}><br/></span>
-              <div>
-
+          <div id={'Team'} className={'h-max py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>
+              <p className={'text-3xl font-bold m-0 p-0'}>NASZ ZESPÓŁ</p>
+              <span className={'bg-primary h-[1px] w-96 mb-4'}><br/></span>
+              <div className={'w-[50vw] flex flex-wrap gap-4 justify-center items-center'}>
+                  {Employees.map(employee => (
+                    <EmployeeView employee={employee} key={employee.id}/>
+                  ))}
               </div>
           </div>
-          <div id="Training"
-               className="h-[50vh] px-[5vw] py-24 bg-foreground text-background grid grid-cols-3 grid-rows-1 justify-center items-center">
-              <div className='flex justify-center items-center'>
-
+          <div
+               className="h-max px-[5vw] py-24 bg-foreground text-background grid grid-cols-3 grid-rows-1 justify-center items-center">
+              <div className='w-full flex justify-center items-center'>
+                <RatesView/>
               </div>
               <div className='flex justify-center items-center'>
                   <span className={'bg-primary h-96 w-[2px]'}><br/></span>
@@ -82,32 +90,21 @@ export default function Home() {
                   <p className={'text-4xl font-bold m-0'}>OCENY NASZYCH KLIENTÓW</p>
               </div>
           </div>
-          <div className={'h-[100vh] py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>
-              <p className={'text-3xl font-bold m-0'}>SZKOLENIA</p>
-              <span className={'bg-primary h-[1px] w-96'}><br/></span>
-              <div>
+          {/*<div id="Training"*/}
+          {/*    className={'h-max py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>*/}
+          {/*    <p className={'text-3xl font-bold m-0'}>SZKOLENIA</p>*/}
+          {/*    <span className={'bg-primary h-[1px] w-96'}><br/></span>*/}
+          {/*    <div>*/}
 
-              </div>
-          </div>
-          <div id={'Gallery'} className={'h-[100vh] py-24 bg-foreground flex flex-col gap-4 items-center text-white'}>
-              <p className={'text-3xl font-bold m-0'}>GALERIA</p>
-              <span className={'bg-primary h-[1px] w-96'}><br/></span>
-              <div>
+          {/*    </div>*/}
+          {/*</div>*/}
+          {/*<div id={'Gallery'} className={'h-max py-24 bg-foreground flex flex-col gap-4 items-center text-white'}>*/}
+          {/*    <p className={'text-3xl font-bold m-0'}>GALERIA</p>*/}
+          {/*    <span className={'bg-primary h-[1px] w-96'}><br/></span>*/}
+          {/*    <div>*/}
 
-              </div>
-          </div>
-          <div id="Contact"
-               className="h-[50vh] px-[5vw] py-24 bg-background grid grid-cols-3 grid-rows-1 justify-center items-center">
-              <div className='flex justify-center items-center'>
-                  <p className={'text-4xl font-bold m-0'}>KONTAKT</p>
-              </div>
-              <div className='flex justify-center items-center'>
-                  <span className={'bg-primary h-96 w-[2px]'}><br/></span>
-              </div>
-              <div className='flex justify-center items-center'>
-
-              </div>
-          </div>
+          {/*    </div>*/}
+          {/*</div>*/}
       </>
   )
 }
