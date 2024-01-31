@@ -7,6 +7,7 @@ import {Employees} from "@/module/employees";
 import {RatesView} from "@/components/rates-view";
 import EmployeeView from "@/components/employee-view";
 
+
 export default function Home() {
   return (
       <>
@@ -90,21 +91,20 @@ export default function Home() {
                   <p className={'text-4xl font-bold m-0'}>OCENY NASZYCH KLIENTÓW</p>
               </div>
           </div>
-          {/*<div id="Training"*/}
-          {/*    className={'h-max py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>*/}
-          {/*    <p className={'text-3xl font-bold m-0'}>SZKOLENIA</p>*/}
-          {/*    <span className={'bg-primary h-[1px] w-96'}><br/></span>*/}
-          {/*    <div>*/}
+          <div id="Training"
+              className={'h-max py-24 bg-background flex flex-col gap-4 items-center text-foreground'}>
+              <p className={'text-3xl font-bold m-0'}>SZKOLENIA</p>
+              <span className={'bg-primary h-[1px] w-96'}><br/></span>
+              <div>
+              </div>
+          </div>
+          <div id={'Gallery'} className={'h-max py-24 bg-foreground flex flex-col gap-4 items-center text-white'}>
+              <p className={'text-3xl font-bold m-0'}>GALERIA</p>
+              <span className={'bg-primary h-[1px] w-96'}><br/></span>
+              <div>
 
-          {/*    </div>*/}
-          {/*</div>*/}
-          {/*<div id={'Gallery'} className={'h-max py-24 bg-foreground flex flex-col gap-4 items-center text-white'}>*/}
-          {/*    <p className={'text-3xl font-bold m-0'}>GALERIA</p>*/}
-          {/*    <span className={'bg-primary h-[1px] w-96'}><br/></span>*/}
-          {/*    <div>*/}
-
-          {/*    </div>*/}
-          {/*</div>*/}
+              </div>
+          </div>
       </>
   )
 }
