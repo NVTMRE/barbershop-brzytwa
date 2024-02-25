@@ -8,8 +8,6 @@ import {
     DialogTrigger
 } from "@/components/ui/dialog";
 import {Button} from "@/components/ui/button";
-import {cn} from "@/lib/utils";
-import {Separator} from "@/components/ui/separator";
 import Link from "next/link";
 
 type Props = {

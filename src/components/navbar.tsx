@@ -29,7 +29,7 @@ export default function Navbar() {
     return (
         <div className={cn(
             isScrolled ? 'bg-background text-foreground' : 'bg-transparent text-white',
-            'z-10  fixed top-0 py-2 px-8 w-full flex justify-between items-center transition-colors gap-x-4'
+            'z-50  fixed top-0 py-2 px-6 w-full flex justify-between items-center transition-colors gap-x-4'
         )}>
             <div className={'flex gap-3 transition-colors'}>
                 <Link href={'https://www.facebook.com/BrzytwaBarbershop/'}>
@@ -51,7 +51,7 @@ export default function Navbar() {
                 </NavigationMenuList>
             </NavigationMenu>
             <div>
-                <Link href={'https://barbershopbrzytwa.booksy.com'} className={cn(buttonVariants({variant: 'outline'}), 'absolute right-6 top-1/3 border-black bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] text-black')}>
+                <Link href={'https://barbershopbrzytwa.booksy.com'} className={cn(buttonVariants({variant: 'outline'}), 'absolute right-5 top-1/3 flex border-black font-black bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] text-bold text-black hover:text-white')}>
                     <p>UMÓW SIĘ</p>
                 </Link>
             </div>

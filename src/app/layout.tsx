@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {cn} from "@/lib/utils";
 import {ThemeProvider} from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
+import {cmun} from "@/lib/custom-font";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Barbershop Brzytwa",
@@ -22,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={cn(montserrat.className, 'bg-background text-black')}>
+      <body className={cn(cmun.className, 'bg-background text-black')}>
       <ThemeProvider
           attribute="class"
           defaultTheme="light"

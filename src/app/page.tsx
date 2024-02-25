@@ -12,18 +12,21 @@ export default function Home() {
   return (
       <>
           <div id={'Hero'}
-               className={'h-[100vh] w-full bg-cover bg-[url("/assets/IMG_6426.jpg")] flex flex-col gap-5 items-center justify-center px-[25vw] text-center text-white'}>
-              <p className={'text-6xl font-black shadow'}>Odkryj Wyjątkową Sztukę Strzyżenia w Naszym Barbershopie</p>
-              <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
-                  <a target={'_blank'}>
-                      <Button
-                          variant={'outline'}
-                          className={'border-white bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem]'}
-                      >
-                          <p>UMÓW SIĘ</p>
-                      </Button>
-                  </a>
-              </Link>
+               className={'h-[100vh] w-full bg-cover bg-[url("/assets/IMG_6426.jpg")] flex flex-col gap-5 items-center justify-center px-[30vw] text-center text-white'}>
+              <div className="h-screen z-10 opacity-25 w-full bg-black absolute"></div>
+              <div className={'z-20 flex flex-col gap-5'}>
+                  <p className={'text-6xl font-black shadow'}>Barbershop Brzytwa UL. 3-go Maja 56 Chorzów</p>
+                  <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
+                      <a target={'_blank'}>
+                          <Button
+                              variant={'outline'}
+                              className={'border-white bg-transparent border-[0.15rem] rounded-radius h-12 px-8 text-[0.80rem] font-bold hover:bg-background'}
+                          >
+                              <p>UMÓW SIĘ</p>
+                          </Button>
+                      </a>
+                  </Link>
+              </div>
           </div>
           <div id={'About'}
                className="h-max px-[5vw] py-24 bg-background grid grid-cols-3 grid-rows-1 justify-center items-center">
@@ -34,7 +37,7 @@ export default function Home() {
                   <span className={'bg-primary h-96 w-[2px]'}><br/></span>
               </div>
               <div className='flex justify-center items-center'>
-                  <p className="m-0 text-lg">
+              <p className="m-0 text-lg">
                       Witaj w naszym barbershopie, miejscu, gdzie tradycja spotyka się z nowoczesnością,
                       a elegancja spotyka się z pasją do sztuki strzyżenia. Nasza historia sięga 2016 roku,
                       a nasze umiejętności są efektem wieloletniego doświadczenia w świecie męskiej pielęgnacji.
@@ -63,7 +66,7 @@ export default function Home() {
                   <a target={'_blank'}>
                       <Button
                           variant={'outline'}
-                          className={'border-foreground bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:text-white'}
+                          className={'border-foreground bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] font-bold hover:text-white'}
                       >
                           <p>UMÓW SIĘ NA WIZYTĘ</p>
                       </Button>

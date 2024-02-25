@@ -1,4 +1,4 @@
-import {Card, CardContent, CardFooter, CardHeader} from "@/components/ui/card";
+import {Card, CardContent, CardHeader} from "@/components/ui/card";
 import * as React from "react";
 import {Rate} from "@/types/rate";
 import {Employees} from "@/module/employees";
