@@ -4,3 +4,5 @@ export type Rate = {
     employeeId: number
     raterName: string
 }
+
+export type Rates = Rate[]

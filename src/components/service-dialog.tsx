@@ -1,4 +1,4 @@
-import {Service} from "@/types/service";
+import {ServiceType} from "@/types/service";
 import {
     Dialog,
     DialogContent,
@@ -9,9 +9,10 @@ import {
 } from "@/components/ui/dialog";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import {cn} from "@/lib/utils";
 
 type Props = {
-    item: Service
+    item: ServiceType
 }
 
 export default function ServiceDialog ({item}:Props) {
@@ -26,17 +27,17 @@ export default function ServiceDialog ({item}:Props) {
                 </Button>
             </DialogTrigger>
             <DialogContent>
-                <DialogHeader className={'px-3 py-5'}>
-                    <DialogTitle className={'flex justify-between pb-4'}>
+                <DialogHeader className={'pt-5 pb-2'}>
+                    <DialogTitle className={'flex justify-between'}>
                         <p>{item.name.toUpperCase()}</p>
                         {!item.customCost ?
                             <p className={'text-muted-foreground'}>{item.cost} zł</p>
                             : <p><p className={'text-muted-foreground'}>{item.customCost}</p></p>
                         }
                     </DialogTitle>
-                    {item.desc && <DialogDescription>{item.desc}</DialogDescription>}
                 </DialogHeader>
-                <DialogFooter className={'flex flex-end'}>
+                {item.desc && <DialogDescription className={'text-sm'}>{item.desc}</DialogDescription>}
+                <DialogFooter className={cn('flex flex-end', item.desc && 'pt-2')}>
                     <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
                         <a target={'_blank'}>
                             <Button

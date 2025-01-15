@@ -1,8 +1,8 @@
 import {Card, CardContent, CardHeader} from "@/components/ui/card";
 import * as React from "react";
 import {Rate} from "@/types/rate";
-import {Employees} from "@/module/employees";
-import {Services} from "@/module/services";
+import {Employees} from "@/config/employees";
+import {Services} from "@/config/services";
 
 type Props = {
     rate: Rate

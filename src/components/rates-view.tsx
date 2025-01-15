@@ -7,7 +7,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import {Rates} from "@/module/rates";
+import {Rates} from "@/config/rates";
 import RateCard from "@/components/rate-card";
 
 export function RatesView() {

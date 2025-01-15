@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3599cd9-1332-42a8-a395-44402449978b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/19ece847-3b8d-4d14-9b0a-805ebc853108.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/21BBAD93-AE85-45B4-B4B3-C3F1D4FCD9B8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/2597C1AA-4039-4F33-A37E-F90DE95608D8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/562f6727-d736-4378-9341-9f384ceeeff1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/78d7eb50-75e5-4a76-91bb-d75e9cc82779.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/797d453e-d38c-4170-9bac-b926782890a4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/9086285d-af8a-4f08-bee9-d725ea012bbc.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/IMG_0102.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/IMG_0105.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/IMG_0548.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/IMG_5859.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/IMG_7855.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/_MG_0991.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/_MG_1050.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/_MG_1111.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/_MG_1329.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/_MG_1338.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/a87c0eb6-89a6-4fbb-b631-5c9e43bb362a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/ce6cbf9e-0baf-498c-99f0-705a0deb2e38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/e4227ac9-1c70-4488-9c7f-c0199018da38.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image0.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image10.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image11.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image15.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image17.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/image9.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/employees.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/nav-items.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/rates.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/is-scrolled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/splitted-nav-items.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/fonts/font.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/nav-items.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/daniel.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/filip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/klaudia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/magda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/patryk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/vlad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/getInstagramMedia/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employee-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/employee-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rate-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rate-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rates-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rates-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/service-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/service-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/theme-provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/carousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/separator.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/cmunbi.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/fonts/cmunbi.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/cmunbx.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/fonts/cmunbx.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/cmunrm.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/fonts/cmunrm.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fonts/cmunti.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/fonts/cmunti.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/custom-font.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/employees.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/nav-items.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/rates.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module/services.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/employee.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/employee.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/nav-item.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/rate.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/rate.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="next15" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NVTMRE&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NVTMRE/barbershop-brzytwa.git&quot;,
+    &quot;accountId&quot;: &quot;b6a06c50-3977-43d2-9c7b-b3426f25e6f7&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rcq1PMYgJ78Q2sQwwVn8Va2gNt" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NVTMRE/.bun/bin/bun.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.run.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\NVTMRE\\WebstormProjects\\barbershop-brzytwa\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NVTMRE\WebstormProjects\barbershop-brzytwa\public\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NVTMRE\WebstormProjects\barbershop-brzytwa\public\assets" />
+      <recent name="C:\Users\NVTMRE\WebstormProjects\barbershop-brzytwa\public" />
+      <recent name="C:\Users\NVTMRE\WebstormProjects\barbershop-brzytwa\src\lib\fonts" />
+      <recent name="C:\Users\NVTMRE\WebstormProjects\barbershop-brzytwa\public\fonts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="js.build_tools.npm" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <package-manager value="C:\Users\NVTMRE\.bun\bin\bun.exe" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3599cd9-1332-42a8-a395-44402449978b" name="Changes" comment="" />
+      <created>1736868494816</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736868494816</updated>
+      <workItem from="1736868497309" duration="127000" />
+      <workItem from="1736869692310" duration="300000" />
+      <workItem from="1736870002727" duration="100000" />
+      <workItem from="1736870109615" duration="3454000" />
+      <workItem from="1736901846229" duration="16074000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
