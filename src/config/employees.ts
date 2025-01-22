@@ -3,7 +3,7 @@ import {EmployeesType} from "@/types/employee";
 export const Employees: EmployeesType = [
     {
         id: 591037,
-        name: "Cezar",
+        name: "Cesar",
         img: "cezar.jpeg"
     },
     {

@@ -12,21 +12,20 @@ export default function Home() {
   return (
       <main>
           <section id={'Hero'}
-                   className="relative h-[100vh] w-full bg-cover bg-[url('/assets/bg.jpg')] px-[25vw] text-center text-white grayscale">
+                   className="relative h-[100vh] w-full bg-cover bg-[url('/assets/bg.jpg')] text-center text-white grayscale">
               <div className="absolute inset-0 bg-black/55 z-0"></div>
-              <div className="relative h-screen z-10 flex flex-col gap-5 items-center justify-center">
-                  <p className={'text-6xl font-black shadow'}>Odkryj Wyjątkową Sztukę Strzyżenia w Naszym
-                      Barbershopie</p>
-                  <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
-                      <a target={'_blank'}>
-                          <Button
-                              variant={'outline'}
-                              className={'border-white bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem]'}
-                          >
-                              <p>UMÓW SIĘ</p>
-                          </Button>
-                      </a>
-                  </Link>
+              <div className="relative h-screen z-10 flex flex-col gap-5 justify-center items-center">
+                      <p className={'text-6xl font-black shadow mx-[50vw]'}>Witaj w Barbershop Brzytwa</p>
+                      <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
+                          <a target={'_blank'}>
+                              <Button
+                                  variant={'outline'}
+                                  className={'border-white bg-transparent border-[0.15rem] rounded-radius h-12 px-8 hover:bg-white hover:text-primary'}
+                              >
+                                  <p>UMÓW SIĘ</p>
+                              </Button>
+                          </a>
+                      </Link>
               </div>
           </section>
           <section id={'About'}
@@ -39,13 +38,10 @@ export default function Home() {
               </div>
               <div className='flex justify-center items-center'>
                   <p className="m-0 text-xl">
-                      Witaj w naszym barbershopie, miejscu, gdzie tradycja spotyka się z nowoczesnością,
-                      a elegancja spotyka się z pasją do sztuki strzyżenia. Nasza historia sięga 2016 roku,
-                      a nasze umiejętności są efektem wieloletniego doświadczenia w świecie męskiej pielęgnacji.
-                      W naszym zespole zgromadziliśmy utalentowanych barberów,
-                      dla których strzyżenie to nie tylko praca, ale prawdziwa sztuka.
-                      Zawsze dążymy do tego, abyś opuszczał nasze drzwi z nie tylko doskonałym fryzjerstwem,
-                      ale także z poczuciem odprężenia i pewności siebie.
+                      Witaj w Brzytwie, miejscu, gdzie tradycja spotyka się z nowoczesnością, a elegancja z pasją do sztuki klasycznego fryzjerstwa męskiego.
+                      Nasza historia sięga 2016 roku a umiejętności są efektem wieloletniego doświadczenia w świecie pielęgnacji męskich włosów i zarostu. Barberzy w Brzytwie to zespół utalentowanych osób,
+                      dla których strzyżenie to nie tylko praca ale prawdziwa przyjemność i pasja. Zawsze dążymy do tego,
+                      abyś opuszczał  Nasz salon nie tylko z doskonałą fryzurą ale także z poczuciem odprężenia i pewności siebie.
                   </p>
               </div>
           </section>

@@ -2,7 +2,7 @@ import {NavItemType} from "@/types/nav-items";
 
 export const NavItems: NavItemType[] = [
     {
-        name: "O nas",
+        name: "O Nas",
         href: "#About"
     },
     {
