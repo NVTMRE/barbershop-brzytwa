@@ -1,8 +1,7 @@
 export type ServiceType = {
-    id: number
+    id: number,
     name: string
-    desc?: string
-    cost?: number
-    customCost?: string
+    description?: string
+    price?: number
 }
 export type ServicesType = ServiceType[]

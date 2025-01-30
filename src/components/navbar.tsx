@@ -39,7 +39,7 @@ export default function Navbar() {
             <Link href={'https://barbershopbrzytwa.booksy.com'} className={'relative'}>
                 <Button
                     variant={'outline'}
-                    className={cn('bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] transition-all', isScrolled && 'border-black')}
+                    className={cn('bg-transparent border-[0.15rem] rounded-radius h-8 px-3 text-[0.75rem] transition-all hover:bg-white', isScrolled && 'border-black hover:bg-foreground hover:text-white')}
                 >
                     <p>UMÓW SIĘ</p>
                 </Button>

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${CMUNFont.className} antialiased`}
+        className={`${CMUNFont.className} antialiased selection:text-white selection:bg-primary`}
       >
         <div className={'flex flex-col'}>
             <Navbar/>

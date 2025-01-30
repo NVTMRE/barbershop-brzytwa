@@ -30,14 +30,11 @@ export default function ServiceDialog ({item}:Props) {
                 <DialogHeader className={'pt-5 pb-2'}>
                     <DialogTitle className={'flex justify-between'}>
                         <p>{item.name.toUpperCase()}</p>
-                        {!item.customCost ?
-                            <p className={'text-muted-foreground'}>{item.cost} zł</p>
-                            : <p><p className={'text-muted-foreground'}>{item.customCost}</p></p>
-                        }
+                        <p>{item.price} zł</p>
                     </DialogTitle>
                 </DialogHeader>
-                {item.desc && <DialogDescription className={'text-sm'}>{item.desc}</DialogDescription>}
-                <DialogFooter className={cn('flex flex-end', item.desc && 'pt-2')}>
+                {item.description && <DialogDescription className={'text-sm'}>{item.description}</DialogDescription>}
+                <DialogFooter className={cn('flex flex-end', item.description && 'pt-2')}>
                     <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
                         <a target={'_blank'}>
                             <Button

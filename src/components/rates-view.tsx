@@ -7,16 +7,30 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import {Rates} from "@/config/rates";
 import RateCard from "@/components/rate-card";
+import {ReviewsType} from "@/types/reviews";
+import {ServicesType} from "@/types/service";
+import {EmployeesType} from "@/types/employee";
 
-export function RatesView() {
+type Props = {
+    reviews?: ReviewsType
+    services?: ServicesType
+    employees?: EmployeesType
+}
+
+export function RatesView({reviews, services, employees}: Props) {
     return (
-        <Carousel className="w-full max-w-md">
+        <Carousel className="w-fit max-w-md" opts={{
+            loop: true,
+        }}>
             <CarouselContent>
-                {Rates.map((rate, index) => (
+                {reviews?.map((review, index) => (
                     <CarouselItem key={index}>
-                        <RateCard rate={rate}/>
+                        <RateCard
+                            review={review}
+                            employee={employees?.find(item => item.id === review.employee_id)}
+                            service={services?.find(item => item.id === review.service_id)}
+                        />
                     </CarouselItem>
                 ))}
             </CarouselContent>

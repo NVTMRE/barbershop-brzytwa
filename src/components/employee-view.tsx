@@ -11,7 +11,7 @@ export default function EmployeeView({employee}: Props) {
             <a target={'_blank'}>
                 <div
                     className={`cursor-pointer flex justify-center items-center text-center border-foreground grayscale hover:grayscale-0 bg-center bg-cover rounded-xl border-[0.15rem] h-96 w-60`}
-                    style={{ backgroundImage: `url("/assets/employees/${employee.img}")` }}
+                    style={{ backgroundImage: `url("${employee.img}")` }}
                 >
                     <p className={'size font-black text-white text-4xl'}>{employee.name}</p>
                 </div>

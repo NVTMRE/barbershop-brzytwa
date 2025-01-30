@@ -14,12 +14,12 @@ export const NavItems: NavItemType[] = [
         href: "#Team"
     },
     {
-        name: "Szkolenia",
-        href: "#Training"
-    },
-    {
         name: "Galeria",
         href: "#Gallery"
+    },
+    {
+        name: "Szkolenia",
+        href: "#Training"
     },
     {
         name: "Kontakt",
