@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/no-explicit-any: "warn" */
+
 import {BooksyDataType} from "@/app/actions";
 import {EmployeesType} from "@/types/employee";
 import {ServicesType} from "@/types/service";
@@ -10,7 +12,7 @@ function getAllServicesFromApi(service_categories: BooksyApiType<any>): Services
 
     (service_categories as BooksyApiType<any>)
         .forEach(category => {
-            category.services.forEach(service => services.push({
+            category.services.forEach((service: Record<string, any>) => services.push({
                 id: service.id,
                 name: service.name,
                 price: service.price,
@@ -23,7 +25,7 @@ function getAllServicesFromApi(service_categories: BooksyApiType<any>): Services
 
 function getAllImagesFromApi(apiImages: Record<string, any>): string[] {
     const images: string[] = [];
-    apiImages.inspiration.forEach(image => images.push(image.image));
+    apiImages.inspiration.forEach((image: Record<string, any>) => images.push(image.image));
 
     return images;
 }
