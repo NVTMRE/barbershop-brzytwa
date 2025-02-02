@@ -10,18 +10,27 @@ import {
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {
+    Drawer, DrawerClose,
+    DrawerContent,
+    DrawerDescription,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
+    DrawerTrigger
+} from "./ui/drawer";
 
 type Props = {
     item: ServiceType
 }
 
 export default function ServiceDialog ({item}:Props) {
-    return (
+    const renderDialog = () => (
         <Dialog>
             <DialogTrigger asChild>
                 <Button
                     variant={'outline'}
-                    className={'border-white bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:foreground hover:bg-background'}
+                    className={'hidden md:block border-white bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:foreground hover:bg-background'}
                 >
                     {item.name.toUpperCase()}
                 </Button>
@@ -48,5 +57,45 @@ export default function ServiceDialog ({item}:Props) {
                 </DialogFooter>
             </DialogContent>
         </Dialog>
+    )
+
+    const renderDrawer = () => (
+        <Drawer>
+            <DrawerTrigger asChild>
+                <Button
+                    variant={'outline'}
+                    className={'block md:hidden border-white bg-transparent border-[0.15rem] rounded-radius h-10 px-6 text-[0.75rem] hover:foreground hover:bg-background'}
+                >
+                    {item.name.toUpperCase()}
+                </Button>
+            </DrawerTrigger>
+            <DrawerContent>
+                <DrawerHeader className={'flex flex-col gap-4'}>
+                    <DrawerTitle className={'text-sm'}>
+                        <p>{item.name.toUpperCase()}</p>
+                        <p>{item.price} zł</p>
+                    </DrawerTitle>
+                    {item.description && <DrawerDescription>{item.description}</DrawerDescription>}
+                </DrawerHeader>
+                <DrawerFooter>
+                    <Link href={'https://barbershopbrzytwa.booksy.com'} legacyBehavior>
+                        <a target={'_blank'}>
+                            <Button className={'w-full'}>UMÓW SIĘ</Button>
+                        </a>
+                    </Link>
+                    <DrawerClose asChild>
+                        <Button variant="outline">Cofnij</Button>
+                    </DrawerClose>
+                </DrawerFooter>
+            </DrawerContent>
+        </Drawer>
+
+    )
+
+    return (
+        <>
+            {renderDialog()}
+            {renderDrawer()}
+        </>
     )
 }

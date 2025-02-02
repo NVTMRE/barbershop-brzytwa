@@ -1,5 +1,4 @@
-import * as React from "react"
-
+"use client"
 import {
     Carousel,
     CarouselContent,
@@ -11,6 +10,7 @@ import RateCard from "@/components/rate-card";
 import {ReviewsType} from "@/types/reviews";
 import {ServicesType} from "@/types/service";
 import {EmployeesType} from "@/types/employee";
+import Autoplay from "embla-carousel-autoplay";
 
 type Props = {
     reviews?: ReviewsType
@@ -20,12 +20,17 @@ type Props = {
 
 export function RatesView({reviews, services, employees}: Props) {
     return (
-        <Carousel className="w-fit max-w-md" opts={{
-            loop: true,
-        }}>
+        <Carousel className="w-screen md:w-fit"
+                  opts={{loop: true}}
+                  plugins={[
+                      Autoplay({
+                          delay: 5000,
+                      })
+                  ]}
+        >
             <CarouselContent>
                 {reviews?.map((review, index) => (
-                    <CarouselItem key={index}>
+                    <CarouselItem key={index} className={'md:w-[8vw] flex justify-center items-center'}>
                         <RateCard
                             review={review}
                             employee={employees?.find(item => item.id === review.employee_id)}
@@ -34,8 +39,8 @@ export function RatesView({reviews, services, employees}: Props) {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious className={'bg-transparent hover:bg-background'}/>
-            <CarouselNext className={'bg-transparent hover:bg-background'}/>
+            <CarouselPrevious className={'bg-transparent hover:bg-background hidden md:flex'}/>
+            <CarouselNext className={'bg-transparent hover:bg-background hidden md:flex'}/>
         </Carousel>
     )
 }

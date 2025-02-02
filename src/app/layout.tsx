@@ -5,8 +5,11 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Barbershop Brzytwa",
-  description: "",
+    title: "Barbershop Brzytwa",
+    description: "Witaj w Brzytwie, miejscu, gdzie tradycja spotyka się z nowoczesnością",
+    icons: {
+        icon: '/logo.png',
+    }
 };
 
 export default function RootLayout({
