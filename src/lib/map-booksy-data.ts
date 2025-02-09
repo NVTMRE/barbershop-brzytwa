@@ -27,6 +27,7 @@ function getAllServicesFromApi(service_categories: BooksyApiType<any>): Services
 function getAllImagesFromApi(apiImages: Record<string, any>): string[] {
     const images: string[] = [];
     apiImages.inspiration.forEach((image: Record<string, any>) => images.push(image.image));
+    apiImages.biz_photo.forEach((image: Record<string, any>) => images.push(image.image));
 
     return images;
 }
