@@ -27,8 +27,10 @@ export default function RateCard({review, service, employee}: Props) {
                     <p className={'text-muted-foreground items-center'}>{review.first_name} {review.last_name}</p>
                 </CardHeader>
                 <p>{review.review}</p>
-                <p className={'font-medium'}>{service?.name}</p>
-                <p className={'text-sm'}>Pracownik: {employee?.name}</p>
+                <div className={'pt-4 w-full flex justify-between items-center'}>
+                    <p className={'font-medium'}>{service?.name}</p>
+                    <p className={'text-sm'}>Pracownik: {employee?.name}</p>
+                </div>
             </CardContent>
             {/*MOBILE*/}
             <CardContent className={'flex flex-col text-center md:hidden'}>
