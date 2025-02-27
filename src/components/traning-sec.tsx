@@ -8,7 +8,7 @@ export default function TraningSec() {
                  className={'h-max px-12 py-24 bg-foreground flex flex-col gap-8 items-center text-foreground text-white text-center md:hidden'}>
             <p className={'pb-4 px-12 text-3xl font-bold m-0 border-b md:border-b-0 border-primary'}>SZKOLENIA</p>
             <div className={'flex flex-col justify-center items-center gap-8 border-b border-primary pb-12'}>
-                <Image src={'/assets/employees/cezar.jpeg'} alt={'Zdjęcie ze szkoleń'} width={300} height={300}
+                <Image src={'/assets/employees/591037.jpeg'} alt={'Zdjęcie ze szkoleń'} width={300} height={300}
                        className={'rounded-xl'}/>
                 <div className={'flex flex-col gap-8'}>
                     <h1 className={'font-black text-center text-2xl'}>KURSY BARBERSKIE - CHORZÓW</h1>
@@ -88,7 +88,7 @@ export default function TraningSec() {
             <p className={'px-12 text-3xl font-bold mb-12'}>SZKOLENIA</p>
             <div className={'grid grid-cols-2 px-28'}>
                 <div className={'flex justify-center items-center py-8 border-r border-primary'}>
-                    <Image src={'/assets/employees/cezar.jpeg'} alt={'Zdjęcie ze szkoleń'} width={300} height={300}
+                    <Image src={'/assets/employees/591037.jpeg'} alt={'Zdjęcie ze szkoleń'} width={300} height={300}
                            className={'rounded-xl'}/>
                 </div>
                 <div className={'px-36 flex flex-col gap-8 justify-center'}>

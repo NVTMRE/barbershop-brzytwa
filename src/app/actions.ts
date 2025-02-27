@@ -29,7 +29,7 @@ export async function getBooksyData(): Promise<IResponse<BooksyDataType>> {
 
         return {
             status: true,
-            data: mapBooksyData(data['business'])
+            data: await mapBooksyData(data['business'])
         }
     } catch (e) {
         if (e instanceof Error) {

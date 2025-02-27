@@ -12,7 +12,6 @@ export const revalidate = 86400
 
 export default async function Home() {
     const {data} = await getBooksyData()
-
   return (
       <main>
           <section id={'Hero'}

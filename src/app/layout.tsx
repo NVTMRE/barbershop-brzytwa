@@ -5,10 +5,24 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-    title: "Barbershop Brzytwa",
+    title: "Barbershop Brzytwa | Chorzów | Ul. 3 Maja 56",
     description: "Witaj w Brzytwie, miejscu, gdzie tradycja spotyka się z nowoczesnością",
+    keywords: [
+        "chorzów",
+        "barber",
+        "barbershop",
+        "brzytwa",
+        "mikołów",
+        "fryzjer",
+        "strzyżenie",
+        "broda",
+        "zarost"
+    ],
     icons: {
         icon: '/logo.png',
+    },
+    openGraph: {
+        siteName: "Barbershop Brzytwa",
     }
 };
 
@@ -18,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pl">
       <body
         className={`${CMUNFont.className} antialiased selection:text-white selection:bg-primary`}
       >

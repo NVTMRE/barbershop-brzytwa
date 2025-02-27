@@ -4,6 +4,7 @@ import {BooksyDataType} from "@/app/actions";
 import {EmployeesType} from "@/types/employee";
 import {ServicesType} from "@/types/service";
 import {ReviewsType} from "@/types/reviews";
+import {checkImageExists} from "@/lib/check-file-exists";
 
 type BooksyApiType<T> = Record<string, T>[]
 
@@ -26,6 +27,7 @@ function getAllServicesFromApi(service_categories: BooksyApiType<any>): Services
 function getAllImagesFromApi(apiImages: Record<string, any>): string[] {
     const images: string[] = [];
     apiImages.inspiration.forEach((image: Record<string, any>) => images.push(image.image));
+    apiImages.biz_photo.forEach((image: Record<string, any>) => images.push(image.image));
 
     return images;
 }
@@ -41,19 +43,27 @@ function getReviewsFromApi(apiReviews: BooksyApiType<any>): ReviewsType {
     }));
 }
 
-function getEmployeesFromApi(apiReviews: BooksyApiType<string | number>): EmployeesType {
-    return apiReviews.map(employee => ({
-        id: Number(employee.id),
-        name: String(employee.name),
-        img: String(employee.photo_url),
-    }))
+async function getEmployeesFromApi(apiReviews: BooksyApiType<string | number>): Promise<EmployeesType> {
+    return await Promise.all(
+        apiReviews.map(async (employee) => {
+            const localImagePath = await checkImageExists(String(`/assets/employees/${employee.id}`));
+
+            return {
+                id: Number(employee.id),
+                name: String(employee.name),
+                img: localImagePath ? `/assets/employees/${employee.id}.${localImagePath.split('.')[1]}` : String(employee.photo_url),
+            };
+        })
+    );
 }
-export function mapBooksyData (
+
+
+export async function mapBooksyData (
     businessJson: Record<string, unknown>,
-): BooksyDataType {
+): Promise<BooksyDataType> {
     const {staff, reviews: apiReviews, images: apiImages, service_categories} = businessJson
 
-    const employees: EmployeesType = getEmployeesFromApi(staff as BooksyApiType<string | number>)
+    const employees: EmployeesType = await getEmployeesFromApi(staff as BooksyApiType<string | number>)
     const reviews: ReviewsType = getReviewsFromApi(apiReviews as BooksyApiType<any>)
     const services: ServicesType = getAllServicesFromApi(service_categories as BooksyApiType<any>)
     const images: string[] = getAllImagesFromApi(apiImages as Record<string, any>)
